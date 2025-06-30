@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soul of Thece - Web Kelas 9C</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background-color: black;
+      background-image: url('https://raw.githubusercontent.com/remforwildan/media/main/stars.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-bottom: 2px solid white;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      text-shadow: 0 0 10px cyan;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 2rem;
+      text-shadow: 0 0 8px magenta;
+    }
+    .daftar, .walikelas {
+      padding: 1rem 2rem;
+      max-width: 600px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 1rem;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+      margin-bottom: 2rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 0.3rem 0;
+      padding: 0.4rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(255,255,255,0.1);
+      cursor: pointer;
+    }
+    blockquote {
+      font-style: italic;
+      margin: 1rem 0;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-left: 4px solid cyan;
+      border-radius: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin-top: 2rem;
+    }
+    .play-btn {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 1000;
+      padding: 12px 20px;
+      background: linear-gradient(135deg, #0ff, #08f);
+      border: none;
+      color: black;
+      font-weight: bold;
+      border-radius: 30px;
+      box-shadow: 0 0 10px #0ff, 0 0 20px #08f;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .play-btn:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚀 Soul of Thece 🚀</h1>
+    <p>Kelas 9C - Angkatan Galaksi 2025</p>
+  </header>  <section class="walikelas">
+    <h2>👨‍🏫 Wali Kelas 9C</h2>
+    <p><strong>Pak Khoiri</strong></p>
+    <blockquote>
+      “Saya sangat bangga dengan anak-anak kelas 9C.  
+      Kalian semua luar biasa, penuh semangat, dan berjiwa galaksi.  
+      Jangan pernah berhenti bermimpi setinggi bintang.”
+    </blockquote>
+  </section>  <section class="daftar">
+    <h2>🧑‍🚀 Daftar Astronot Kelas</h2>
+    <ul>
+      <li onclick="showProfile('wibu')">1. Achmad Fathul Fadilah</li>
+      <li>2. Achmad Sukron Ma'mun</li>
+      <li>3. Adibah Nisya Atu Afizah Z</li>
+      <li>4. Amalina Khansa Raisa Putri</li>
+      <li>5. Amelia Yulita Wakito Putri L</li>
+      <li>6. Arzalika Putri Nihar R</li>
+      <li>7. Athaya Javier Abdul Asyraf</li>
+      <li>8. Cahaya Putri Aninndita</li>
+      <li>9. Davee Kirana Wardhani</li>
+      <li>10. Dika Ifham Salsabil</li>
+      <li>11. Elvira Cahaya Mufidah</li>
+      <li>12. Faizah Rahmah Maulidiyyah</li>
+      <li>13. Fakhri Rafi Akhdana</li>
+      <li>14. Felita Zavira Azzahra</li>
+      <li>15. Ferris Martian</li>
+      <li>16. Galin Alivia Agsari Putri</li>
+      <li>17. Hera Fitri Wulandari</li>
+      <li onclick="showProfile('wibu')">18. Wildan 🎸🚀~</li>
+      <li>19. Maya Rafania Rahman</li>
+      <li>20. Moh Azril Akmal Al Rosyid</li>
+      <li>21. Mohammad Aufa Fadlillah</li>
+      <li>22. Muhammad Hanif Ar Rosyid</li>
+      <li>23. Muhammad Alief Rafiansyah</li>
+      <li>24. Muhammad Devan Arrafi</li>
+      <li>25. Muhammad Reza Aldi</li>
+      <li>26. Nabilatuz Sholihah</li>
+      <li>27. Nafisa Anindyta Rahman</li>
+      <li>28. Nayla Mariatul Azizah</li>
+      <li>29. Pratama Hadi Sanjaya</li>
+      <li>30. Tarangga Ahsan RW</li>
+      <li>31. Zahlia Mely Lutfitasari</li>
+      <li>32. Zazqia Putri Ramadani</li>
+    </ul>
+  </section>  <footer>
+    <p>&copy; 2025 Soul of Thece | Kelas 9C Galaksi Heboh</p>
+  </footer>  <audio id="musik" loop>
+    <source src="https://raw.githubusercontent.com/remforwildan/media/main/andaikan.mp3" type="audio/mpeg">
+  </audio>
+  <button onclick="document.getElementById('musik').play()" class="play-btn">
+    🎵 Putar Musik Galaksi
+  </button>  <script>
+    function showProfile(nama) {
+      if(nama === 'wibu') {
+        alert("✨ Nama Tampilan: Wibu.abadii_🎸🚀🌌\n📛 Julukan: a.k.a Rem di Hati 💙\n📝 Quotes: rem di hati💙\n🎯 Cita-cita: Work in Japan\n🤯 Fun Fact: Pernah nonton anime dari jam 9 malam sampai jam 5 pagi🗿");
+      }
+    }
+  </script></body>
+</html>
